@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Property - overflow</title>
+  <style>
+    div.ex1 {
+      background-color: lightblue;
+      width: 110px;
+      height: 110px;
+      overflow: scroll;
+    }
+
+    div.ex2 {
+      background-color: lightblue;
+      width: 110px;
+      height: 110px;
+      overflow: hidden;
+    }
+
+    div.ex3 {
+      background-color: lightblue;
+      width: 110px;
+      height: 110px;
+      overflow: auto;
+    }
+
+    div.ex4 {
+      background-color: lightblue;
+      width: 110px;
+      height: 110px;
+      overflow: clip;
+    }
+
+    div.ex5 {
+      background-color: lightblue;
+      width: 110px;
+      height: 110px;
+      overflow: visible;
+      margin-bottom: 200px;
+    }
+
+    div.ex6 {
+      background-color: darkgreen;
+      width: 110px;
+      height: 110px;
+      overflow: visible;
+      overflow: hidden;
+      overflow: clip;
+      overflow: scroll;
+      overflow: auto;
+      overflow: hidden visible;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      overflow-wrap: normal;
+      overflow-wrap: break-word;
+      overflow-wrap: anywhere;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>The overflow Property</h1>
+
+  <p>The overflow property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.</p>
+
+  <h2>overflow: scroll:</h2>
+  <div class="ex1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+
+  <h2>overflow: hidden:</h2>
+  <div class="ex2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+
+  <h2>overflow: auto:</h2>
+  <div class="ex3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+
+  <h2>overflow: clip:</h2>
+  <div class="ex4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+
+  <h2>overflow: visible (default):</h2>
+  <div class="ex5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+
+  <h2>all of them in one package:</h2>
+  <div class="ex6">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
+
+</body>
+
+</html>

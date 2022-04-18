@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Property - transition</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background: red;
+      transition-property: width;
+      transition-duration: 7s;
+      transition-delay: 2s, 4ms;
+      /* transition-property: margin-right; */
+      /* transition-property: none; */
+      /* transition-property: all; */
+      /* transition-timing-function: ease; */
+      /* transition-timing-function: ease-in; */
+      /* transition-timing-function: ease-out; */
+      transition-timing-function: ease-in-out;
+      /* transition-timing-function: linear; */
+      /* transition-timing-function: step-start; */
+      /* transition-timing-function: step-end; */
+    }
+
+    div:hover {
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>The transition Property</h1>
+
+  <p>Hover over the div element below, to see the transition effect:</p>
+
+  <div></div>
+
+</body>
+
+</html>

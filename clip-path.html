@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Property - clip-path</title>
+  <style>
+    img {
+      clip-path: circle(50%);
+      clip-path: ellipse(110px 400px at 10% 10%);
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+      clip-path: path('M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z');
+      clip-path: margin-box;
+      clip-path: border-box;
+      clip-path: padding-box;
+      clip-path: content-box;
+      clip-path: stroke-box;
+      clip-path: view-box;
+      clip-path: fill-box;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>The clip-path property</h2>
+
+  <img src="https://pbs.twimg.com/media/Dx_JUS-VYAA-5Do.jpg" width="300" height="300">
+
+</body>
+
+</html>

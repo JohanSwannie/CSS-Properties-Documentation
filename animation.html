@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Property - animation</title>
+  <style>
+    body {
+      background: linear-gradient(90deg, rgb(237, 195, 194) 0%, rgb(237, 195, 194) 20%, rgb(226, 167, 165) 20%, rgb(226, 167, 165) 40%, rgb(215, 138, 136) 40%, rgb(215, 138, 136) 60%, rgb(203, 110, 106) 60%, rgb(203, 110, 106) 80%, rgb(192, 81, 77) 80%, rgb(192, 81, 77) 100%);
+    }
+
+    div {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      border-radius: 55%;
+      background: navy;
+      animation: rollball;
+      animation-duration: 2s;
+      animation-iteration-count: 2;
+      animation-direction: normal;
+      animation-direction: reverse;
+      animation-direction: alternate;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease;
+      animation-timing-function: ease-in;
+      animation-timing-function: ease-out;
+      animation-timing-function: ease-in-out;
+      animation-timing-function: linear;
+      animation-fill-mode: none;
+      animation-fill-mode: forwards;
+      animation-fill-mode: backwards;
+      animation-fill-mode: both;
+      animation-play-state: running;
+      animation-play-state: paused;
+    }
+
+    @keyframes rollball {
+      0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+      }
+
+      25% {
+        background: yellow;
+        left: 200px;
+        top: 0px;
+      }
+
+      50% {
+        background: blue;
+        left: 200px;
+        top: 200px;
+      }
+
+      75% {
+        background: green;
+        left: 0px;
+        top: 200px;
+      }
+
+      100% {
+        background: red;
+        left: 0px;
+        top: 0px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>The animation Property</h1>
+
+  <div></div>
+
+</body>
+
+</html>

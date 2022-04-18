@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Property - align-items</title>
+  <style>
+    h2 {
+      text-align: center;
+    }
+
+    #main {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 220px;
+      height: 300px;
+      background: gray;
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+    }
+
+    #main div {
+      flex: 1;
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>align-items: center</h2>
+  <div id="main">
+    <div style="background-color:coral;min-height:30px;">RED</div>
+    <div style="background-color:lightblue;min-height:50px;">BLUE</div>
+    <div style="background-color:lightgreen;min-height:190px;">Green div with more content.</div>
+  </div>
+
+</body>
+
+</html>

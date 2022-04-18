@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Property - counter</title>
+  <style>
+    body {
+      counter-reset: expert-cntr;
+    }
+
+    h2::before {
+      counter-increment: expert-cntr;
+      content: "Expert "counter(expert-cntr) ". ";
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Professional Trumpet Player</h2>
+  <h2>Fishing Expert</h2>
+  <h2>Gym Fanatic</h2>
+  <h2>Coding Freek</h2>
+  <h2>Critical Thinker</h2>
+  <h2>Problem Solver</h2>
+
+</body>
+
+</html>

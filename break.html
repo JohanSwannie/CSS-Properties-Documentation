@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+  <title>CSS Properties - break-after, break-before, break-inside</title>
+  <style>
+    body {
+      background: linear-gradient(270deg, #5ed6fa, #7fde6b);
+    }
+
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    h3 {
+      font-family: 'Squada One', cursive;
+      font-size: 44px;
+      text-align: center;
+    }
+
+    textarea {
+      font-size: 15px;
+      font-weight: bold;
+      border: 13px ridge lightskyblue;
+      margin: 1%;
+    }
+
+    @media print {
+      h1 {
+        break-before: always;
+      }
+    }
+
+    @media print {
+      footer {
+        break-after: always;
+      }
+    }
+
+    @media print {
+      img {
+        display: block;
+        break-inside: avoid;
+      }
+    }
+
+    [name='textarea1'] {
+      background: linear-gradient(244deg, lightblue, lightgreen, olive);
+    }
+
+    [name='textarea2'] {
+      background: lightgreen;
+    }
+
+    [name='textarea3'] {
+      background: lightblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h3>CSS Properties --> Break After - Break Before - Break Inside</h3>
+    <textarea name="textarea1" rows="7" cols="120">
+                                           Break-After - Definition and Usage
+
+      The break-after property specifies whether or not a page break, column break, or region break should occur after
+      the specified element. The break-after property extends the CSS2 page-break-after property. Using break-after,
+      you can tell the browser to break the page, column, or region after the element the break-after property is
+      applied to, or avoid the element to be split and span across two pages.
+    </textarea>
+    <textarea name="textarea2" cols="120" rows="7">
+                                            Break-Before Definition and Usage
+
+      The break-before property specifies whether or not a page break, column break, or region break should occur before
+      the specified element. The break-before property extends the CSS2 page-break-before property. Using break-before,
+      you can tell the browser to break the page, column, or region before the element the break-before property is
+      applied to, or avoid the element to be split and span across two pages.
+    </textarea>
+    <textarea name="textarea3" cols="120" rows="7">
+                                            Break-Inside Definition and Usage
+
+      The break-inside property specifies whether or not a page break, column break, or region break should occur inside
+      the specified element. The break-inside property extends then CSS2 page-break-inside property. With break-inside,
+      you can tell the browser to avoid breaks inside images, code snippets, tables, and listst.
+    </textarea>
+  </div>
+
+</body>
+
+</html>

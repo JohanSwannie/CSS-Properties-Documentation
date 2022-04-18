@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Property - font</title>
+  <style>
+    @font-face {
+      font-family: myFirstFont;
+      src: url(sansation_light.woff);
+    }
+
+    .example1 {
+      font-family: myFirstFont;
+    }
+
+    h1 {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 35px;
+      font-size-adjust: 0.58;
+      font-stretch: ultra-condensed;
+      font-stretch: extra-condensed;
+      font-stretch: condensed;
+      font-stretch: semi-condensed;
+      font-stretch: normal;
+      font-stretch: semi-expanded;
+      font-stretch: extra-expanded;
+      font-stretch: ultra-expanded;
+      font-stretch: expanded;
+      font-style: normal;
+      font-style: italic;
+      font-style: oblique;
+      font-style: oblique 10deg;
+      font-variant: normal;
+      font-variant: no-common-ligatures proportional-nums;
+      font-variant: common-ligatures tabular-nums;
+      font-variant: small-caps slashed-zero;
+      font-variant-caps: normal;
+      font-variant-caps: small-caps;
+      font-variant-caps: all-small-caps;
+      font-variant-caps: petite-caps;
+      font-variant-caps: all-petite-caps;
+      font-variant-caps: unicase;
+      font-variant-caps: titling-caps;
+      font-weight: normal;
+      font-weight: 100;
+      font-weight: bold;
+      font-weight: bolder;
+      font-weight: lighter;
+      font-synthesis: none;
+      font-synthesis: weight;
+      font-synthesis: style;
+      font-synthesis: small-caps;
+      font-synthesis: weight style small-caps;
+    }
+
+    /* enable small-caps */
+    .ex1 {
+      font-feature-settings: "smcp"on;
+    }
+
+    /* convert both upper and lowercase to small caps */
+    .ex2 {
+      font-feature-settings: "c2sc", "smcp";
+    }
+
+    /* no common ligatures */
+    .ex3 {
+      font-feature-settings: "liga"0;
+    }
+
+    /* enable automatic fractions */
+    .ex4 {
+      font-feature-settings: "frac";
+    }
+
+    ​.ex5 {
+      font-kerning: normal;
+    }
+
+    ​.ex6 {
+      font-kerning: auto;
+    }
+
+    ​.ex7 {
+      font-kerning: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>The @font-face Rule</h1>
+
+  <div class='example1'>With CSS, websites can finally use fonts other than the pre selected "web-safe" fonts.</div>
+  ​<div class="ex1">This is some text 0123.</div>
+  <div class="ex2">This is some text 0123.</div>
+  <div class="ex3">This is some text 0123.</div>
+  <div class="ex4">This is some text 0123.</div>
+  <div class="ex5">This is some text 0123.</div>
+  <div class="ex6">This is some text 0123.</div>
+  <div class="ex7">This is some text 0123.</div>
+</body>
+
+</html>

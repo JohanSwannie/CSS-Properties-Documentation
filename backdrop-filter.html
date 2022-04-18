@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Property - backdrop-filter</title>
+  <style>
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .background {
+      background: lightblue url('https://hgtvhome.sndimg.com/content/dam/images/hgtv/stock/2018/2/27/0/iStock-purple-geraniums-542945456.jpg.rend.hgtvcom.966.725.suffix/1519754224444.jpeg') no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 555px;
+      width: 555px;
+    }
+
+    .transbox {
+      background-color: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(3px);
+      padding: 150px;
+      margin: 30px;
+      font-weight: bold;
+      border: 2px solid #000;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>The backdrop-filter Property</h1>
+  <div class="container">
+    <div class="background">
+      <div class="transbox">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

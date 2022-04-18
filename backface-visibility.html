@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Property - backface-visibility</title>
+  <style>
+    #box1 {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 100px;
+      width: 100px;
+      background-color: red;
+    }
+
+    #box2 {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 150px;
+      width: 150px;
+      background-color: navy;
+
+    }
+
+    #box1, #box2 {
+      color: #FFF;
+      font-weight: bold;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      transform: rotateY(180deg);
+    }
+
+    #box1 {
+      backface-visibility: hidden;
+    }
+
+    #box2 {
+      backface-visibility: visible;
+    }
+
+    h1,
+    p {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>The backface-visibility Property</h1>
+  <p>This div element has "backface-visibility: hidden", and the back face of the div element is invisible:</p>
+  <h3 id="box1">BOX 1</h3>
+
+  <p>This div element has "backface-visibility: visible", and the back face of the div element shows a mirror image of the front face:</p>
+  <h3 id="box2">BOX 2</h3>
+
+</body>
+
+</html>

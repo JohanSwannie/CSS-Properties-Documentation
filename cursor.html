@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap" rel="stylesheet">
+  <title> CSS Property - cursor</title>
+  <style>
+    body {
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(270deg, #9a7dcf, #5aa6fd);
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      grid-gap: 3px;
+      text-align: center;
+    }
+
+    .container div {
+      font-family: 'Tangerine', cursive;
+      font-size: 2.2rem;
+      width: auto;
+      height: auto;
+      border: 2px solid #000;
+      background: linear-gradient(272deg, lime, peachpuff);
+    }
+
+    h1,
+    h2 {
+      font-size: 27px;
+      font-family: 'Spectral SC', serif;
+      text-align: center;
+    }
+
+    @media (max-width: 1280px) {
+      .container div {
+        font-size: 1.8rem;
+      }
+      h1, h2 {
+        font-size: 24px
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .container div {
+        font-size: 1.55rem;
+      }
+      h1, h2 {
+        font-size: 21px
+      }
+
+    }
+
+    @media (max-width: 800px) {
+      .container div {
+        font-size: 1.3rem;
+      }
+      h1, h2 {
+        font-size: 17px
+      }
+
+    }
+
+    @media (max-width: 640px) {
+      .container div {
+        font-size: 1rem;
+      }
+      h1, h2 {
+        font-size: 14px
+      }
+
+    }
+
+    @media (max-width: 420px) {
+      .container div {
+        font-size: 0.7rem;
+      }
+      h1, h2 {
+        font-size: 11px
+      }
+
+    }
+
+    @media (max-width: 280px) {
+      .container div {
+        font-size: 0.5rem;
+      }
+      h1, h2 {
+        font-size: 9px
+      }
+
+    }
+
+    .alias {
+      cursor: alias;
+    }
+
+    .all-scroll {
+      cursor: all-scroll;
+    }
+
+    .auto {
+      cursor: auto;
+    }
+
+    .cell {
+      cursor: cell;
+    }
+
+    .context-menu {
+      cursor: context-menu;
+    }
+
+    .col-resize {
+      cursor: col-resize;
+    }
+
+    .copy {
+      cursor: copy;
+    }
+
+    .crosshair {
+      cursor: crosshair;
+    }
+
+    .default {
+      cursor: default;
+    }
+
+    .e-resize {
+      cursor: e-resize;
+    }
+
+    .ew-resize {
+      cursor: ew-resize;
+    }
+
+    .grab {
+      cursor: -webkit-grab;
+      cursor: grab;
+    }
+
+    .grabbing {
+      cursor: -webkit-grabbing;
+      cursor: grabbing;
+    }
+
+    .help {
+      cursor: help;
+    }
+
+    .move {
+      cursor: move;
+    }
+
+    .n-resize {
+      cursor: n-resize;
+    }
+
+    .ne-resize {
+      cursor: ne-resize;
+    }
+
+    .nesw-resize {
+      cursor: nesw-resize;
+    }
+
+    .ns-resize {
+      cursor: ns-resize;
+    }
+
+    .nw-resize {
+      cursor: nw-resize;
+    }
+
+    .nwse-resize {
+      cursor: nwse-resize;
+    }
+
+    .no-drop {
+      cursor: no-drop;
+    }
+
+    .none {
+      cursor: none;
+    }
+
+    .not-allowed {
+      cursor: not-allowed;
+    }
+
+    .pointer {
+      cursor: pointer;
+    }
+
+    .progress {
+      cursor: progress;
+    }
+
+    .row-resize {
+      cursor: row-resize;
+    }
+
+    .s-resize {
+      cursor: s-resize;
+    }
+
+    .se-resize {
+      cursor: se-resize;
+    }
+
+    .sw-resize {
+      cursor: sw-resize;
+    }
+
+    .text {
+      cursor: text;
+    }
+
+    .w-resize {
+      cursor: w-resize;
+    }
+
+    .wait {
+      cursor: wait;
+    }
+
+    .zoom-in {
+      cursor: zoom-in;
+    }
+
+    .zoom-out {
+      cursor: zoom-out;
+    }
+  </style>
+</head>
+
+<body style="overflow-x: hidden; overflow-y: hidden;">
+
+  <h1>The cursor Property</h1>
+  <h2>Hover mouse over each box to see the type of cursor</h2>
+  <div class="container">
+    <div class="alias">alias</div>
+    <div class="all-scroll">all-scroll</div>
+    <div class="auto">auto</div>
+    <div class="cell">cell</div>
+    <div class="context-menu">context-menu</div>
+    <div class="col-resize">col-resize</div>
+    <div class="copy">copy</div>
+    <div class="crosshair">crosshair</div>
+    <div class="default">default</div>
+    <div class="e-resize">e-resize</div>
+    <div class="ew-resize">ew-resize</div>
+    <div class="grab">grab</div>
+    <div class="grabbing">grabbing</div>
+    <div class="help">help</div>
+    <div class="move">move</div>
+    <div class="n-resize">n-resize</div>
+    <div class="ne-resize">ne-resize</div>
+    <div class="nesw-resize">nesw-resize</div>
+    <div class="ns-resize">ns-resize</div>
+    <div class="nw-resize">nw-resize</div>
+    <div class="nwse-resize">nwse-resize</div>
+    <div class="no-drop">no-drop</div>
+    <div class="none">none</div>
+    <div class="not-allowed">not-allowed</div>
+    <div class="pointer">pointer</div>
+    <div class="progress">progress</div>
+    <div class="row-resize">row-resize</div>
+    <div class="s-resize">s-resize</div>
+    <div class="se-resize">se-resize</div>
+    <div class="sw-resize">sw-resize</div>
+    <div class="text">text</div>
+    <div class="w-resize">w-resize</div>
+    <div class="wait">wait</div>
+    <div class="zoom-in">zoom-in</div>
+    <div class="zoom-out">zoom-out</div>
+  </div>
+
+</body>
+
+</html>

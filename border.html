@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <title>CSS Property - border</title>
+  <style>
+    body {
+      background: url('https://images.designtrends.com/wp-content/uploads/2015/11/13153143/Beautiful-Grey-Background.jpg') no-repeat;
+      background-size: cover;
+      font-weight: bold;
+    }
+
+    h2 {
+      color: #FFF;
+      text-align: center;
+      margin: 4%;
+    }
+
+    .box {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      width: 12vw;
+      height: 12vh;
+      margin: 12px;
+    }
+
+    .bx01 {
+      color: #FFF;
+      background: black;
+      border: 15px solid #FFF;
+      box-decoration-break: clone;
+    }
+
+    .bx02 {
+      background: crimson;
+      border: 15px solid #000;
+      border-style: double;
+    }
+
+    .bx03 {
+      background: lime;
+      border: 15px solid yellow;
+      border-style: dotted;
+    }
+
+    .bx04 {
+      background: orange;
+      border: 15px solid #000;
+      border-style: dashed;
+    }
+
+    .bx05 {
+      background: olive;
+      border: 15px ridge rgba(211, 220, 50, .6);
+    }
+
+    .bx06 {
+      background: peachpuff;
+      border: 15px solid red;
+      border-style: groove;
+    }
+
+    .bx07 {
+      color: #000;
+      background: #FFF;
+      border: 15px solid rebeccapurple;
+      border-style: inset;
+    }
+
+    .bx08 {
+      color: #000;
+      background: gray;
+      border: 15px solid #FFF;
+      border-style: outset;
+    }
+
+    .bx09 {
+      color: #000;
+      background: palegreen;
+      border: 15px solid #303030;
+      border-left-style: hidden;
+    }
+
+    .bx10 {
+      color: #f3f3f3;
+      background: navy;
+      border: 2px;
+      border-top: 15px solid cyan;
+      border-right: 15px solid yellow;
+      border-left: 15px solid orange;
+      border-bottom: 15px solid green;
+    }
+
+    .bx11 {
+      color: #f3f3f3;
+      background: green;
+      border: 10px solid #FFF;
+      border-style: dashed ridge dotted;
+    }
+
+    .bx12 {
+      color: #FFF;
+      background: #309A7D;
+      border: 10px solid red;
+      border-style: double groove;
+    }
+
+    .bx13 {
+      color: #000;
+      background: peachpuff;
+      border: 15px solid transparent;
+      border-image-source: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/PinkArgyle.svg/800px-PinkArgyle.svg.png');
+      border-image-repeat: round;
+      border-image-slice: 44;
+    }
+
+    .bx14 {
+      color: #000;
+      background: lightgreen;
+      border: 15px solid transparent;
+      border-image-source: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8gIiGh9sTbeYFA2b3QRKlIIIYQoO3dGIqnDBiDnXoTnP_HCtNzPxdizWum_W7uqLOpP4&usqp=CAU');
+      border-radius: 55%;
+      border-image-repeat: stretch;
+      border-image-slice: 30;
+    }
+
+    .bx15 {
+      color: rebeccapurple;
+      background: gray;
+      border: 15px solid transparent;
+      border-image-source: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRymFOAc_7VSVe1vEqtOER1MTwF5Gs2OXNLQw&usqp=CAU');
+      border-image-repeat: stretch;
+      border-image-slice: 25;
+    }
+
+    .bx16 {
+      color: #000;
+      background: lightyellow;
+      border: 15px solid transparent;
+      border-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRrK8PTTjU69rggsMFXeAI6Dgsr1zHfNVDvA&usqp=CAU');
+      border-image-repeat: stretch;
+      border-image-slice: 33;
+      /* border-image-width: 12px;
+      border-image-outset: 12px; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>CSS Border Styling</h2>
+    <div class="row1 row">
+      <div class='box bx01 col-md-3'>Solid</div>
+      <div class='box bx02 col-md-3'>Double</div>
+      <div class='box bx03 col-md-3'>Dotted</div>
+      <div class='box bx04 col-md-3'>Dashed</div>
+      <div class='box bx05 col-md-3'>Ridge</div>
+      <div class='box bx06 col-md-3'>Groove</div>
+      <div class='box bx07 col-md-3'>Inset</div>
+      <div class='box bx08 col-md-3'>Outset</div>
+      <div class='box bx09 col-md-3'>Hidden</div>
+      <div class='box bx10 col-md-3'>Variety 1</div>
+      <div class='box bx11 col-md-3'>Variety 2</div>
+      <div class='box bx12 col-md-3'>Variety 3</div>
+      <div class='box bx13 col-md-3'>Border Image 1</div>
+      <div class='box bx14 col-md-3'>Border Image 2</div>
+      <div class='box bx15 col-md-3'>Border Image 3</div>
+      <div class='box bx16 col-md-3'>Border Image 4</div>
+    </div>
+  </div>
+</body>
+
+</html>

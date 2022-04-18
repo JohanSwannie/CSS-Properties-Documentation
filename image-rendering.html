@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Property - image-rendering</title>
+  <style>
+    .image {
+      height: 100px;
+      width: 100px;
+      image-rendering: auto;
+    }
+
+    .crisp-edges {
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+    }
+
+    .pixelated {
+      image-rendering: pixelated;
+    }
+
+    .smooth {
+      image-rendering: smooth;
+    }
+
+    .high-quality {
+      image-rendering: high-quality;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>The image-rendering Property</h1>
+
+  <p>image-rendering: auto;</p>
+  <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpXfzin4wnUFfrjbst68qOXoKwFVG0ihEhIg&usqp=CAU" alt="face" width="132" height="132">
+
+  <p>image-rendering: crisp-edges;</p>
+  <img class="image crisp-edges" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpXfzin4wnUFfrjbst68qOXoKwFVG0ihEhIg&usqp=CAU" alt="face" width="132" height="132">
+
+  <p>image-rendering: pixelated;</p>
+  <img class="image pixelated" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpXfzin4wnUFfrjbst68qOXoKwFVG0ihEhIg&usqp=CAU" alt="face" width="132" height="132">
+
+  <p>image-rendering: smooth;</p>
+  <img class="image smooth" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpXfzin4wnUFfrjbst68qOXoKwFVG0ihEhIg&usqp=CAU" alt="face" width="132" height="132">
+
+  <p>image-rendering: high-quality;</p>
+  <img class="image high-quality" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpXfzin4wnUFfrjbst68qOXoKwFVG0ihEhIg&usqp=CAU" alt="face" width="132" height="132">
+
+  <p>Original image: <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpXfzin4wnUFfrjbst68qOXoKwFVG0ihEhIg&usqp=CAU" alt="face" width="132" height="132"></p>
+
+</body>
+
+</html>

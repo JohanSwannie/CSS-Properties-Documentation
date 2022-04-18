@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Property - object-fit</title>
+  <style>
+    img.a {
+      width: 200px;
+      height: 400px;
+      object-fit: cover;
+      object-fit: contain;
+      object-fit: fill;
+      object-fit: none;
+      object-fit: scale-down;
+      object-position: 5px 10%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>The object-fit Property</h2>
+
+  <h2>object-fit: cover:</h2>
+  <p>Cut off the sides of an image, preserving the aspect ratio, and also filling in the space:</p>
+  <img class="a" src="https://media.istockphoto.com/vectors/beautiful-nature-vector-id110873133?k=20&m=110873133&s=170667a&w=0&h=8zyH0WmGfeIjnJWxMTJc651zIoP30ajW9OJBKVdn5tg=" alt="Picture" width="400" height="300">
+
+  <h2>Original image:</h2>
+  <img src="https://media.istockphoto.com/vectors/beautiful-nature-vector-id110873133?k=20&m=110873133&s=170667a&w=0&h=8zyH0WmGfeIjnJWxMTJc651zIoP30ajW9OJBKVdn5tg=" alt="Picture" width="400" height="300">
+
+  <p>Note: The object-fit property is not supported in Internet Explorer/Edge 15 or earlier.</p>
+
+</body>
+
+</html>
