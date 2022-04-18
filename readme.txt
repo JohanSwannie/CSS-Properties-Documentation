@@ -1,1 +1,1 @@
-This Repository will contain stacks of general knowledge regarding Web Development
+This Repository will contain roughly all the important CSS Properties 
